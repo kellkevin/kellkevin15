@@ -1,0 +1,33 @@
+{
+  "name": "kellkevin15",
+  "version": "1.0.0",
+  "description": "Kevin Kelly's new portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npm run css && node-sass sass/main.scss  public/css/main.css -w && exit",
+    "css": "node-sass sass/main.scss -o public/css"
+  },
+  "keywords": [
+    "web",
+    "development",
+    "html",
+    "css",
+    "js",
+    "javascript",
+    "cascading",
+    "stylesheets"
+  ],
+  "author": "Kevin Kelly",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-sass": "^3.4.1"
+    
+  },
+  "devDependencies": {
+    "sass": "^1.22.10",
+    "webpack": "^4.39.3",
+    "node-sass": "^4.12.0"
+  }
+}

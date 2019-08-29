@@ -1,0 +1,44 @@
+.parent { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    
+    .about-me { grid-area: 1 / 1 / 2 / 2; } 
+    .portfolio-cuts { grid-area: 1 / 1 / 1 / 1; } 
+    
+    .qualifications { grid-area: 3 / 2 / 1 / 1; } 
+    /* .div4 { grid-area: 2 / 2 / 3 / 3; }  */
+    
+    }
+    
+    /* Breakpoints */
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    
+    .parent { 
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(1, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    .about-me { grid-area: 1 / 1 / 2 / 2; } 
+    .portfolio-cuts { grid-area: 2 / 1 / 3 / 2; } 
+    .how-its-made { grid-area: 3 / 1 / 4 / 2; } 
+    .qualifications { grid-area: 4 / 1 / 5 / 2; } 
+    /* .div5 { grid-area: 5 / 1 / 6 / 2; } */
+    }
+    
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+    /* Styles */
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    }
