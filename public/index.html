@@ -10,11 +10,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <style>
 	.qualifications ul {
-		-moz-column-count: 8;
+		-moz-column-count: 2;
 	    -moz-column-gap: 20px;
-	    -webkit-column-count: 8;
+	    -webkit-column-count: 2;
 	    -webkit-column-gap: 20px;
-	    column-count: 8;
+	    column-count: 2;
 	    column-gap: 20px;
 	}
 
@@ -22,7 +22,49 @@
 		list-style: none;
 	}
 
+	header {
+		position: fixed;
+		top:0px;
+	}
 
+	.hero {
+		margin-top: 400px;
+	}
+
+	.row {
+		margin: 20px 0px 20px;
+	}
+
+	.skilltree {
+		background-color: black;
+		color: white;
+		padding: 25px;
+		border-radius: 5px;
+	}
+
+	.skilltree ul {
+		padding-bottom:  5px;
+		border-bottom: 1px dotted darkgray;
+	}
+
+	main > div.parent > section {
+		min-height: 35rem;
+		display: block;
+	}
+
+	footer .row div {
+		min-height: 200px;
+	}
+
+	footer .row div h5 {
+		text-decoration-style: bold;
+		color: #4c4a57;
+	}
+
+	.portfolio {
+		min-height: 200px;
+		border: 1px solid gray;
+	}
 </style>
 
 <body>	
@@ -38,10 +80,10 @@
 			
 		</div>
 	</header><!-- /header -->
-	<section class="hero container" style="background-color: black; color: white; height: 270px; padding-top: 50px;">
-		<div style="">	
-			<h1>I'm Kevin</h1>
-			<h3>Toronto based UI Engineer and QA Automation Engineer. Always down to build.</h3>
+	<section class="hero container" style="background-color: black; color: white; height: 270px; padding-top: 50px; border-radius: 6px;">
+		<div class="col-6">	
+			<h1>I'm <strong>Kevin</strong></h1>
+			<h3>Toronto based <strong>UI Engineer</strong> and <strong>QA Automation Engineer</strong>. Always down to build.</h3>
 		</div>
 			<div class="contact">
 				<a href="">github</a>
@@ -50,9 +92,10 @@
 			</div>
 		</section>
 	<main>
-		<div class="parent">
+		<div class="parent container">
 		<!-- -->
-		<section class="about-me">
+		<section class="about-me row">
+			<h2>Wait... which <strong>Kevin</strong>? </h2>
 			<p>
 					I'm a web professional. As a front end developer, I take business specs, 
 					approved designs, and coding standards, to turn them into CMS templates, 
@@ -62,41 +105,47 @@
 		</section>
 		<!-- -->
 		<!-- -->
-		<section class="portfolio-cuts">
-			<h3>What I built</h3>
-				<div class="portfolio">
-					<div class="portfolio-links">
-						<a href="">Git</a>
-						<a href="">More Info</a>
-						<a href="">See It</a>
-					</div>
-				</div>
-				<div class="portfolio">
+		<section class="portfolio-cuts row">
+			<div class="col-12">
+			<h3>What I <strong>built</strong></h3>
+				<section class="row">
+					
+					<div class="portfolio col-6">
 						<div class="portfolio-links">
 							<a href="">Git</a>
 							<a href="">More Info</a>
 							<a href="">See It</a>
 						</div>
 					</div>
-				<div class="portfolio">
-					<div class="portfolio-links">
-						<a href="">Git</a>
-						<a href="">More Info</a>
-						<a href="">See It</a>
+					<div class="portfolio col-6">
+							<div class="portfolio-links">
+								<a href="">Git</a>
+								<a href="">More Info</a>
+								<a href="">See It</a>
+							</div>
+						</div>
+					<div class="portfolio col-6">
+						<div class="portfolio-links">
+							<a href="">Git</a>
+							<a href="">More Info</a>
+							<a href="">See It</a>
+						</div>
 					</div>
-				</div>
-				<div class="portfolio">
-					<div class="portfolio-links">
-						<a href="">Git</a>
-						<a href="">More Info</a>
-						<a href="">See It</a>
+					<div class="portfolio col-6">
+						<div class="portfolio-links">
+							<a href="">Git</a>
+							<a href="">More Info</a>
+							<a href="">See It</a>
+						</div>
 					</div>
+				</section>
 				</div>
 		</section>
 		<!-- -->
 		<!-- -->
-		<section class="how-its-made">
-				<h3>How it's made</h3>
+		<section class="how-its-made row">
+			<div class="col-12">
+				<h3>How it's <strong>made</strong></h3>
 			<p>
 				Simply put, I take what the designer does and turn it into produce built by code. I utilize technology to get people where they're going. Whether it's CMS install, landing page, site - you name it. 
 			</p>
@@ -106,53 +155,91 @@
 			<p>
 				You've got mail! Utilizing MJML, I can procure and test emails to ensure the delivery is at its' best on any screen. 
 			</p>
+		</div>
 		</section>
 		<!-- -->
 		<!-- -->
-		<section class="qualifications">
-			<h3>What I got </h3>
-			<h4>Tools, skills, and whatnot</h4>
-			<ul class="skills">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>SASS/SCSS</li>
-				<li>LESS</li>
-				<li>JQuery</li>
-				<li>npm</li>
-				<li>BEM</li>
-				<li>Wordpress</li>
-				<li>Photoshop</li>
-				<li>Git</li>
-				<li>Selenium</li>
-				<li>Katalon</li>
-				<li>MJML</li>
-			</ul>
-			<h2>Familiar With</h2>
-			<ul>
-				<li>Umbraco</li>
-				<li>Sharepoint</li>
-			</ul>
-			<h2>Coming Soon</h2>
-			<ul>
-				<li>Node</li>
-				<li>Angular</li>
-				<li>React</li>
-				<li>Redux</li>
-				<li>Mongo DB</li>
-			</ul>			
+		<section class="qualifications row">
+			<div class="col-12">
+				<h3><strong>What</strong> I got </h3>
+			<section class="row">
+				<div class="col-3 ">
+					A gang of experience chops, development standard code, DRY to a good point.
+					Approachable, pixel perfect, and attention to detail work. 
+				</div>
+				<div class="offset-lg-1 col-8 skilltree">
+					
+					<h4>Tools, skills, and <strong>whatnot</strong></h4>
+					<ul class="skills">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>SASS/SCSS</li>
+						<li>LESS</li>
+						<li>JQuery</li>
+						<li>npm</li>
+						<li>BEM</li>
+						<li>Wordpress</li>
+						<li>Photoshop</li>
+						<li>Git</li>
+						<li>Selenium</li>
+						<li>Katalon</li>
+						<li>MJML</li>
+					</ul>
+				
+				<h4><strong>Familiar</strong> With</h4>
+				<ul>
+					<li>Umbraco</li>
+					<li>Sharepoint</li>
+					<li>C#</li>
+				</ul>
+					
+					<h4>Coming <strong>Soonish</strong></h4>
+					<ul>
+						<li>Node</li>
+						<li>Angular</li>
+						<li>React</li>
+						<li>Redux</li>
+						<li>Mongo DB</li>
+					</ul>
+					<h4>Don't bother <strong>asking</strong></h4>
+					<ul>
+						<li>Joomla</li>
+						<li>Flight</li>
+						<li>ASP</li>
+					</ul>
+					</div>
+				</section>			
+			</div>
+		</section >
+		<section class="row">
+			<h3>Blogs</h3>
+		
 
 		</section>
-		<!-- -->
+
 	</div>
 	</main>
-	<footer style="height: 400px; display: block; background-color: black; color: white; letter-spacing: -1px; ">
-		<div class="container">
+	<footer style="min-height: 400px; display: block; background-color: black; color: white; letter-spacing: -1px; ">
+		<section class="container">
+			<h1 class="row" style="text-indent: 0px">So.... now what?!</h1>
+		</section>
+		<section class="container row">
 			
-
-
-		</div>
-		<div class="container" style="position: relative; top:80%;">© 2019 | <strong>kevin kelly</strong> | Created with Code, Caffene, and Love.
+			<div class="col-3">
+				<h5 class="">Get in touch?</h5>
+			</div>
+			<div class="col-3">
+				<h5 class="">Let's talk?</h5>
+			</div>
+			<div class="col-3">
+				<h5 class="">Maybe not?</h5>
+			</div>
+			<div class="col-3">
+				<h5 class="">You must be bored</h5>
+			</div>
+		</section>
+		<div class="container" style="position: relative; top:80%;">Copyright © 2019 | <strong>kevin kelly</strong> | Created with Code, Caffene, and Love.
 			</div>
 	</footer>
 </body>
