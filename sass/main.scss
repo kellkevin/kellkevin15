@@ -1,5 +1,11 @@
 /* Global Style */
 @import "base.scss";
 
+// Layout 
 @import "layout/header.scss";
-/* @import "layout/layout.scss"; */
+
+@import "layout/footer.scss";
+
+// Components 
+@import "components/hero.scss";
+
