@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Kevin Kelly || FEWD - Front End Web Dev/Engineer</title>
+		<title>Kevin Kelly || the FE(ui)WD</title>
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 		<!-- Might not need this. -->
@@ -25,6 +26,8 @@
 	header {
 		position: fixed;
 		top:0px;
+		background-color: #eeebf2;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236f6f70' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 	}
 
 	.hero {
@@ -47,6 +50,22 @@
 		border-bottom: 1px dotted darkgray;
 	}
 
+	.skilltree ul li img { 
+		width: 2em;
+		height: 2em;
+		filter: grayscale(100%);
+		margin: 4px 4px 0px 0px;
+	}
+
+	.qualifications ul li {
+		padding-bottom: 4px;
+		line-height: 1.5em;
+	}
+
+	.less {
+		height:1em !important;
+	}
+
 	main > div.parent > section {
 		min-height: 35rem;
 		display: block;
@@ -58,15 +77,37 @@
 
 	footer .row div h5 {
 		text-decoration-style: bold;
-		color: #4c4a57;
+		
 	}
 
 	.portfolio {
 		min-height: 200px;
 		border: 1px solid gray;
 	}
+
+	header {
+		width: 100%;
+		z-index: 99;
+		background-color: white;
+	}
+
+	.services {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+
+	}
+	.services div {
+		width: 30em;
+	}
+	.services img {
+		width: 80%;
+	}
 </style>
 
+</head>
 <body>	
 	<header class="site-header">
 		<nav>
@@ -80,9 +121,9 @@
 			
 		</div>
 	</header><!-- /header -->
-	<section class="hero container" style="background-color: black; color: white; height: 270px; padding-top: 50px; border-radius: 6px;">
+	<section class="hero container" style="">
 		<div class="col-6">	
-			<h1>I'm <strong>Kevin</strong></h1>
+			<h1><em id="greet"></em> I'm <strong>Kevin</strong></h1>
 			<h3>Toronto based <strong>UI Engineer</strong> and <strong>QA Automation Engineer</strong>. Always down to build.</h3>
 		</div>
 			<div class="contact">
@@ -146,15 +187,33 @@
 		<section class="how-its-made row">
 			<div class="col-12">
 				<h3>How it's <strong>made</strong></h3>
-			<p>
-				Simply put, I take what the designer does and turn it into produce built by code. I utilize technology to get people where they're going. Whether it's CMS install, landing page, site - you name it. 
-			</p>
-			<p>
-				I ensure that the designs can be translated across various browsers and devices with responsive based solutions. User-friendly and built against the standards set forth by your definition of done! 
-			</p>
-			<p>
-				You've got mail! Utilizing MJML, I can procure and test emails to ensure the delivery is at its' best on any screen. 
-			</p>
+			<div class="services">
+			<div>
+				<h5>Web Development</h5>
+				<hr/>
+			<p>Simply put, I take what the designer does and turn it into produce built by code. I utilize technology to get people where they're going. Whether it's CMS install, landing page, site - you name it. </p>	
+				<img src="imgs/044-website-1.png" />
+			</div>
+			<div>
+				<h5>Responsive Websites</h5>
+				<hr/>
+			<p>	I ensure that the designs can be translated across various browsers and devices 
+				with responsive based solutions. User-friendly and built against the standards set forth by your definition of done! </p>	 
+				<img src="imgs/009-mobile-web.png" />
+			</div>
+			<div>
+				<h5>Email Development</h5>
+				<hr/>
+				<p>You've got mail! Utilizing MJML, I can procure and test emails to ensure the delivery is at its' best on any screen.</p>	 
+				<img src="imgs/021-maximize.png" />
+			</div>
+			<div>
+				<h5>Testing, Testing, Testing</h5>
+				<hr/>
+				<p>Whether it's smoke, end-to-end, discovery, setting up automation test suites is the thing I got. </p>	 
+				<img src="imgs/021-maximize.png" />
+			</div>
+			</div>
 		</div>
 		</section>
 		<!-- -->
@@ -171,20 +230,20 @@
 					
 					<h4>Tools, skills, and <strong>whatnot</strong></h4>
 					<ul class="skills">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>SASS/SCSS</li>
-						<li>LESS</li>
-						<li>JQuery</li>
-						<li>npm</li>
-						<li>BEM</li>
-						<li>Wordpress</li>
-						<li>Photoshop</li>
-						<li>Git</li>
-						<li>Selenium</li>
-						<li>Katalon</li>
-						<li>MJML</li>
+						<li><img src="imgs/icons/html.svg" alt=""/>HTML</li>
+						<li><img src="imgs/icons/css.svg" alt=""/>CSS</li>
+						<li><img src="imgs/icons/javascript.svg" alt=""/>JavaScript</li>
+						<li><img src="imgs/icons/sass.svg" alt=""/>SASS/SCSS</li>
+						<li><img src="imgs/icons/less.svg" alt="" class="less"/>LESS</li>
+						<li><img src="imgs/icons/jquery.svg" alt=""/>JQuery</li>
+						<li><img src="imgs/icons/npm.svg" alt=""/>npm</li>
+						<li><img src="imgs/icons/bem.svg" alt=""/>BEM</li>
+						<li><img src="imgs/icons/wordpress.svg" alt=""/>Wordpress</li>
+						<li><img src="imgs/icons/photoshop.svg" alt=""/>Photoshop</li>
+						<li><img src="imgs/icons/git.svg" alt=""/>Git</li>
+						<li><img src="imgs/icons/selenium.png" alt=""/>Selenium</li>
+						<li><img src="imgs/icons/katalon.png" alt=""/>Katalon</li>
+						<li><img src="imgs/icons/mjml.png" alt=""/>MJML</li>
 					</ul>
 				
 				<h4><strong>Familiar</strong> With</h4>
@@ -228,19 +287,32 @@
 			
 			<div class="col-3">
 				<h5 class="">Get in touch?</h5>
+				<hr />
 			</div>
 			<div class="col-3">
 				<h5 class="">Let's talk?</h5>
+				<hr />
 			</div>
 			<div class="col-3">
 				<h5 class="">Maybe not?</h5>
+				<hr />
 			</div>
 			<div class="col-3">
 				<h5 class="">You must be bored</h5>
+				<hr />
 			</div>
 		</section>
 		<div class="container" style="position: relative; top:80%;">Copyright © 2019 | <strong>kevin kelly</strong> | Created with Code, Caffene, and Love.
 			</div>
 	</footer>
+	<script type="text/javascript" charset="utf-8" async defer>
+	var greet = ["konichiwa","hello","gutentag","dvaro","Welkomen","Wah Gwan","You good?","Greetings"];
+	var greeting = document.querySelector("#greet");
+	console.log(greeting);
+	var randDigit = Math.round(Math.random(greet.length) * 10);
+	console.log(randDigit);
+	console.log(greet[randDigit]);
+	greeting.textContent = greet[randDigit];
+</script>
 </body>
 </html>
